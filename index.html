@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="style/reset.css"   rel="stylesheet"/>
+  <link href="style/style.css"   rel="stylesheet"/>
+  <link href="images/pokeball.png" rel="icon" type="image/x-icon" /> 
+
+  <script src="https://kit.fontawesome.com/ab6c59c2ea.js"></script>
+ 
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div>Home</div>
+      <div>Pokedex</div>
+      <div>Video Games</div>
+      <div>Trading</div>
+      <div>Pokemon TV</div>
+      <div>Pokemon Events</div>
+      <div>News</div>
+    </nav>
+  </header>
+
+  <section class="filter">
+    <div class="search">
+      <label>Nome ou Número</label>
+      <div class="search-icon">
+        <input type="text" placeholder="Nome ou Registro"/>
+        <div onclick="filterPokemon()"> <i class="fa-solid fa-magnifying-glass"></i> </div>
+      </div>
+    </div>
+    <div class="description">
+      Pesquise um Pokemon por Nome ou por Número de Registro Nacional. 
+    </div>
+    
+  </section>
+
+
+    <section class="filter-favorite" onclick="showFavorites()">
+      Exibir favoritos
+    </section>
+
+  
+  <main>
+    <section class="pokemons"></section>
+  </main>
+ 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script/script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+main{
+  width: 1024px;
+}
+
+.pokemons{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pokemon{
+  min-width: 180px;
+  min-height: fit-content;
+  margin: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pokemon i{
+  position: absolute;
+  right: 15px;
+  bottom: 50px;
+  color: #DAA520;
+}
+
+.pokemon i:hover{
+  cursor: pointer;
+}
+
+.pokemon small{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #929292;
+}
+
+.pokemon strong{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pokemon .img{
+  width: 180px;
+  height: 180px;
+  background-color: #ededed;
+  border-radius: 10px;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon .img:hover{
+  opacity: 90%;
+}
+
+.pokemon .types{
+  display: flex;
+  margin-left: 10px;
+}
+
+.pokemon .type{
+  width: 60px;
+  height: 20px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  margin-right: 3px;
+}
+
+.pokemon .Grass{
+  color: #212121;
+  background-color: #9bcc50;
+}
+
+.pokemon .Fire{
+  color: #FFFFFF;
+  background-color: #fd7d24;
+}
+
+.pokemon .Dragon{
+  color: #FFFFFF;
+  background-color: #da725f;
+}
+
+
+.pokemon .Water{
+  color: #FFFFFF;
+  background-color: #579bc7;
+}
+
+.pokemon .Bug{
+  color: #FFFFFF;
+  background-color: #729c42;
+}
+
+.pokemon .Poison{
+  color: #FFFFFF;
+  background-color: #b480c3;
+}
+
+.pokemon .Flying{
+  color: #212121;
+  background-color: #81b6c5;
+}
+
+.pokemon .Normal{
+  color: #212121;
+  background-color: #a9b0b2;
+}
+
+.pokemon .Ground{
+  color: #212121;
+  background-color: #f6e88b;
+}
+
+.pokemon .Eletric{
+  color: #212121;
+  background-color: #dec940;
+}
+
+.pokemon .Fairy{
+  color: #212121;
+  background-color: #f7bbe5;
+}
+
+.pokemon .Fighting{
+  color: #FFFFFF;
+  background-color: #db9b73;
+}
+
+.pokemon .Psychic{
+  color: #FFFFFF;
+  background-color: #e799c7;
+}
+
+.pokemon .Rock{
+  color: #FFFFFF;
+  background-color: #9b872a;
+}
+
+.pokemon .Steel{
+  color: #212121;
+  background-color: #9fb6b7;
+}
+
+.pokemon .Ice{
+  color: #212121;
+  background-color: #59c5e5;
+}
+
+.pokemon .Dark{
+  color: #FFFFFF;
+  background-color: #737373;
+}
+
+.hidden{
+  display: none;
+}
+
+.filter{
+  width: 100%;
+  height: 150px;
+  background-color: #343434;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  border-radius: 4px;
+}
+
+.filter label{
+  font-weight: 700;
+}
+
+.search-icon{
+  display: flex;
+  align-items: flex-end;
+}
+
+.search-icon div{
+  width: 35px;
+  height: 35px;
+  background-color: #d04d26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+.search-icon div:hover{
+  cursor: pointer;
+}
+
+.filter .search{
+  display: flex;
+  align-items: right;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.filter .description{
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: #389144;
+  text-align: center;
+  margin-left: 50px;
+  line-height: 25px;
+  
+}
+
+.filter .description:hover{
+  opacity: 90%;
+}
+
+.filter input {
+  margin-top: 15px;
+  height: 35px;
+  width: 300px;
+  text-align: center;
+  border-radius: 4px;
+  border-color: #000000 1px solid;
+}
+
+header{
+  width: 1024px;
+  height: 80px;
+  padding: 0 18px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 1;
+}
+
+nav{
+  display: flex;
+  text-align: center;
+}
+
+nav div{
+  width: 140px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+nav div:hover{
+  background: #de3913;
+}
+
+.filter-favorite{
+  width: 200px;
+  height: 50px;
+  background-color: #d04d26;
+  color: #FFFFFF;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filter-favorite:hover{
+  opacity: 90%;
+  cursor: pointer;
+}
